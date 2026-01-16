@@ -11,7 +11,15 @@ Proyecto de componentes reutilizables desarrollados con React, TypeScript y Tail
 
 ## Componentes Reutilizables
 
-- **Button**: Botón personalizable y versátil para diferentes casos de uso
+### Button
+Botón personalizable y versátil para diferentes casos de uso.
+
+**Estados:**
+- **Hover**: Cambio de color y efecto visual al pasar el ratón
+- **Focus**: Indicador visual para accesibilidad y navegación por teclado
+- **Disabled**: Botón deshabilitado con apariencia atenuada
+
+### Otros Componentes
 - **LoginForm**: Formulario de login con validaciones funcionales
 - **Navbar**: Barra de navegación responsive y adaptable
 - **UserCard**: Tarjeta de usuario para mostrar información con estilos personalizables
@@ -33,6 +41,6 @@ Sistema de colores cohesivo y coherente:
 
 Los colores trabajan en conjunto para mantener una identidad visual profesional y coherente.
 
-## 📍 Repositorio en GitHub
+## 🎨 Diseño en Figma
 
-Código disponible en: [github.com/DafneCabreraSanz/P5.1-Componentes-React-estilados-con-Tailwind](https://github.com/DafneCabreraSanz/P5.1-Componentes-React-estilados-con-Tailwind.git)
+Prototipo y diseños disponibles en: [Figma - Botones](https://www.figma.com/proto/1mxImfsuGtFrRYQrzUgUBY/Botones?node-id=0-1&t=RvAP4ixlijAsMAwg-1)
