@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# Componentes React Estilados con Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de componentes reutilizables desarrollados con React, TypeScript y Tailwind CSS.
 
-Currently, two official plugins are available:
+## Decisiones de Diseño
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Tailwind CSS**: Enfoque para desarrollo rápido y consistente
+- **TypeScript**: Tipado fuerte para mayor seguridad y mantenibilidad del código
+- **Componentes modulares**: Estructura organizada para facilitar la escalabilidad
+- **Vite**: Moderno y eficiente para desarrollo ágil
 
-## React Compiler
+## Componentes Reutilizables
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Button**: Botón personalizable y versátil para diferentes casos de uso
+- **LoginForm**: Formulario de login con validaciones funcionales
+- **Navbar**: Barra de navegación responsive y adaptable
+- **UserCard**: Tarjeta de usuario para mostrar información con estilos personalizables
 
-## Expanding the ESLint configuration
+## 🎨 Paleta de Colores
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Sistema de colores cohesivo y coherente:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Color | Hex | Propósito |
+|-------|-----|----------|
+| **Brand Purple** | `#5c1690` | Color principal de marca |
+| **Purple Shadow** | `#5c169052` | Sombras con transparencia |
+| **Primary Hover** | `#f3eef7` | Estados hover en elementos primarios |
+| **Secondary Background** | `#e8d0fa` | Fondos secundarios y complementarios |
+| **Secondary Hover** | `#d59eff` | Estados hover en elementos secundarios |
+| **Danger Background** | `#ffc4c4` | Fondos para avisos y errores suaves |
+| **Danger Hover** | `#ff8b8b` | Estados hover en elementos de error |
+| **Error** | `#ff0000` | Mensajes de error críticos |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Los colores trabajan en conjunto para mantener una identidad visual profesional y coherente.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📍 Repositorio en GitHub
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Código disponible en: [github.com/DafneCabreraSanz/P5.1-Componentes-React-estilados-con-Tailwind](https://github.com/DafneCabreraSanz/P5.1-Componentes-React-estilados-con-Tailwind.git)
