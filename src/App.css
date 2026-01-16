@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #5c1690;
+  --color-brand-shadow: #5c169091;
+  --color-brand-shadow-hover: #5c169052;
+  --color-primary-hover: #f3eef7;
+  --color-secondary-bg: #e8d0fa;
+  --color-secondary-hover: #d59eff;
+  --color-danger-bg: #ffc4c4;
+  --color-danger-hover: #ff8b8b;
+  --color-error: #ff0000;
+}
