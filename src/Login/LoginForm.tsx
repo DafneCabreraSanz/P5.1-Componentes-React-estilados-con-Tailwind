@@ -6,7 +6,7 @@ export const LoginForm: React.FC = () => {
     <div className="border border-brand-purple/50 rounded-[2.5rem] p-12 bg-white w-full max-w-md shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)] mx-auto">
       <h2 className="text-2xl font-black text-center mb-10 tracking-widest uppercase">LOGIN</h2>
       
-      <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+      <form className="space-y-6">
         <div className="space-y-2">
           <label className="font-bold ml-1">Email</label>
           <input 
