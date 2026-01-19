@@ -6,7 +6,11 @@ export const UserCard: React.FC = () => {
     <div className="bg-white border border-brand-purple/40 rounded-3xl p-8 shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)] flex flex-col md:flex-row items-center gap-8 max-w-sm md:max-w-2xl mx-auto">
       {/* Avatar */}
       <div className="w-32 h-32 rounded-full bg-[#f3ede2] overflow-hidden shrink-0">
-         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="avatar" />
+         <img
+           src="https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=AI-Girl&radius=50&scale=90"
+           alt="avatar generado por IA"
+           className="w-full h-full object-cover"
+         />
       </div>
 
       {/* Info */}
