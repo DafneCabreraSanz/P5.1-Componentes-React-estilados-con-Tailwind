@@ -1,5 +1,7 @@
 import { Button } from '../Button/Button';
 
+const inputBaseClass = "w-full border rounded-xl px-4 py-3 text-center outline-none transition-colors";
+
 export function LoginForm() {
   return (
     <div className="border border-brand-purple/50 rounded-[2.5rem] p-12 bg-white w-full max-w-md shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)] mx-auto">
@@ -11,7 +13,7 @@ export function LoginForm() {
           <input 
             type="email" 
             placeholder="usuario@gmail.com"
-            className="w-full border rounded-xl px-4 py-3 text-center outline-none transition-colors border-secondary-bg focus:border-brand-purple"
+            className={`${inputBaseClass} border-secondary-bg focus:border-brand-purple`}
           />
         </div>
 
@@ -20,7 +22,7 @@ export function LoginForm() {
           <input 
             type="password" 
             defaultValue="password123"
-            className="w-full border rounded-xl px-4 py-3 text-center outline-none transition-colors border-danger-bg focus:border-error"
+            className={`${inputBaseClass} border-danger-bg focus:border-error`}
           />
         </div>
 

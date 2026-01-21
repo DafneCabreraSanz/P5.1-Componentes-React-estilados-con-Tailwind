@@ -1,5 +1,7 @@
 import { Button } from '../Button/Button';
 
+const inputBaseClass = "w-full border rounded-xl px-4 py-3 text-center outline-none transition-colors";
+
 export function UserCard() {
   return (
     <div className="bg-white border border-brand-purple/40 rounded-3xl p-8 shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)] flex flex-col md:flex-row items-center gap-8 max-w-sm md:max-w-2xl mx-auto">
@@ -21,7 +23,7 @@ export function UserCard() {
             type="email"
             defaultValue="usuario@gmail.com"
             placeholder="usuario@gmail.com"
-            className="w-full border rounded-xl px-4 py-3 text-center outline-none transition-colors border-secondary-bg focus:border-brand-purple"
+            className={`${inputBaseClass} border-secondary-bg focus:border-brand-purple`}
           />
         </div>
 

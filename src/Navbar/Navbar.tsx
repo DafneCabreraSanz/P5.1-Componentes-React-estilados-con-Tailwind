@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 
+const navLinkClass = "hover:text-brand-purple";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,9 +13,9 @@ export function Navbar() {
 
         {/* RESPONSIVE: Menú horizontal - Oculto en móvil (hidden), visible en desktop (md:flex ≥768px) */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="#" className="hover:text-brand-purple">Home</a>
-          <a href="#" className="hover:text-brand-purple">Products</a>
-          <a href="#" className="hover:text-brand-purple">Contact</a>
+          <a href="#" className={navLinkClass}>Home</a>
+          <a href="#" className={navLinkClass}>Products</a>
+          <a href="#" className={navLinkClass}>Contact</a>
         </div>
 
         {/* RESPONSIVE: Hamburguesa - Visible solo en móvil (md:hidden oculta en ≥768px) */}
@@ -30,9 +32,9 @@ export function Navbar() {
       {/* RESPONSIVE: Menú desplegable móvil - Solo visible en móvil cuando isOpen=true (md:hidden oculta en ≥768px) */}
       {isOpen && (
         <div className="md:hidden flex flex-col gap-3 mt-4 pb-4 text-sm font-medium">
-          <a href="#" className="hover:text-brand-purple">Home</a>
-          <a href="#" className="hover:text-brand-purple">Products</a>
-          <a href="#" className="hover:text-brand-purple">Contact</a>
+          <a href="#" className={navLinkClass}>Home</a>
+          <a href="#" className={navLinkClass}>Products</a>
+          <a href="#" className={navLinkClass}>Contact</a>
           <Button variant="primary" className="w-full" texto="Login" />
         </div>
       )}

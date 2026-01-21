@@ -3,6 +3,8 @@ import { UserCard } from './Usuario/UserCard';
 import { LoginForm } from './Login/LoginForm';
 import { Button } from './Button/Button';
 
+const hoverShadow = "shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!";
+
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans text-gray-900">
@@ -19,21 +21,21 @@ export default function App() {
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Primary</span>
               <Button variant="primary" texto="BUTTON" />
-              <Button variant="primary" className="bg-primary-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!" texto="BUTTON" />
+              <Button variant="primary" className={`bg-primary-hover! ${hoverShadow}`} texto="BUTTON" />
               <Button variant="primary" disabled texto="BUTTON" />
             </div>
 
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Secondary</span>
               <Button variant="secondary" texto="BUTTON" />
-              <Button variant="secondary" className="bg-secondary-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!" texto="BUTTON" />
+              <Button variant="secondary" className={`bg-secondary-hover! ${hoverShadow}`} texto="BUTTON" />
               <Button variant="secondary" disabled texto="BUTTON" />
             </div>
 
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Danger</span>
               <Button variant="danger" texto="BUTTON" />
-              <Button variant="danger" className="bg-danger-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!" texto="BUTTON" />
+              <Button variant="danger" className={`bg-danger-hover! ${hoverShadow}`} texto="BUTTON" />
               <Button variant="danger" disabled texto="BUTTON" />
             </div>
           </div>
