@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from '../Button/Button';
 
 export function Navbar() {
@@ -9,19 +9,13 @@ export function Navbar() {
       <div className="flex items-center justify-between">
         <div className="text-lg font-semibold tracking-tight">Logo</div>
 
-        {/* Menú desktop */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a href="#" className="hover:text-brand-purple">Home</a>
           <a href="#" className="hover:text-brand-purple">Products</a>
           <a href="#" className="hover:text-brand-purple">Contact</a>
         </div>
 
-        {/* Botón hamburguesa */}
-        <button
-          aria-label="Abrir menú"
-          className="md:hidden flex flex-col gap-1"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="md:hidden flex flex-col gap-1" onClick={() => setIsOpen(!isOpen)}>
           <span className="w-6 h-0.5 bg-black" />
           <span className="w-6 h-0.5 bg-black" />
           <span className="w-6 h-0.5 bg-black" />
@@ -30,7 +24,6 @@ export function Navbar() {
         <Button variant="primary" className="hidden md:block text-sm px-4 py-2">Login</Button>
       </div>
 
-      {/* Menú móvil */}
       {isOpen && (
         <div className="md:hidden flex flex-col gap-3 mt-4 pb-4 text-sm font-medium">
           <a href="#" className="hover:text-brand-purple">Home</a>
