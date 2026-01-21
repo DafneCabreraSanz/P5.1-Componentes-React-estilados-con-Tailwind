@@ -11,8 +11,8 @@ export default function App() {
       <main className="grow container mx-auto px-4 py-12 space-y-20">
         
         <section className="space-y-6">
-          <h2 className="text-center text-sm font-bold text-gray-400 uppercase tracking-[0.2em]">
-            Estados de Componentes
+          <h2 className="text-xl font-bold text-center">
+            VARIOS TIPOS DE BOTONES
           </h2>
           <div className="flex flex-wrap justify-center gap-8 p-10 bg-white rounded-3xl border-2 border-dashed border-brand-purple/20">
             
@@ -45,7 +45,7 @@ export default function App() {
         </section>
 
         <section className="space-y-6 max-w-2xl mx-auto">
-          <h2 className="text-xl font-bold border-l-4 border-brand-purple pl-4">Perfil de Usuario</h2>
+          <h2 className="text-xl font-bold text-center">Perfil de Usuario</h2>
           <UserCard />
         </section>
 

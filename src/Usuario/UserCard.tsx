@@ -25,7 +25,7 @@ export function UserCard() {
           />
         </div>
 
-        <Button variant="primary" className="mt-6">BUTTON</Button>
+        <Button variant="primary" className="mt-6" texto="Iniciar Sesión" />
       </div>
     </div>
   );
