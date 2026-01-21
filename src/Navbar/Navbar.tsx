@@ -21,7 +21,7 @@ export function Navbar() {
           <span className="w-6 h-0.5 bg-black" />
         </button>
 
-        <Button variant="primary" className="hidden md:block text-sm px-4 py-2">Login</Button>
+        <Button variant="primary" className="hidden md:block text-sm px-4 py-2" texto="Login" />
       </div>
 
       {isOpen && (
@@ -29,7 +29,7 @@ export function Navbar() {
           <a href="#" className="hover:text-brand-purple">Home</a>
           <a href="#" className="hover:text-brand-purple">Products</a>
           <a href="#" className="hover:text-brand-purple">Contact</a>
-          <Button variant="primary" className="w-full">Login</Button>
+          <Button variant="primary" className="w-full" texto="Login" />
         </div>
       )}
     </nav>

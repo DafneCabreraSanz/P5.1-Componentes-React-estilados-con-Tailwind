@@ -25,7 +25,7 @@ export function LoginForm() {
         </div>
 
         <div className="flex justify-center pt-4">
-          <Button variant="primary" className="px-12">LOGIN</Button>
+          <Button variant="primary" className="px-12" texto="LOGIN" />
         </div>
       </form>
     </div>

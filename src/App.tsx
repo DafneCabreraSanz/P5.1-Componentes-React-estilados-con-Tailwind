@@ -4,12 +4,6 @@ import { LoginForm } from './Login/LoginForm';
 import { Button } from './Button/Button';
 
 export default function App() {
-  const hover = {
-    primary: 'bg-primary-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!',
-    secondary: 'bg-secondary-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!',
-    danger: 'bg-danger-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!',
-  };
-
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans text-gray-900">
       <Navbar />
@@ -24,23 +18,23 @@ export default function App() {
             
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Primary</span>
-              <Button variant="primary">BUTTON</Button>
-              <Button variant="primary" className={hover.primary}>BUTTON</Button>
-              <Button variant="primary" disabled>BUTTON</Button>
+              <Button variant="primary" texto="BUTTON" />
+              <Button variant="primary" className="bg-primary-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!" texto="BUTTON" />
+              <Button variant="primary" disabled texto="BUTTON" />
             </div>
 
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Secondary</span>
-              <Button variant="secondary">BUTTON</Button>
-              <Button variant="secondary" className={hover.secondary}>BUTTON</Button>
-              <Button variant="secondary" disabled>BUTTON</Button>
+              <Button variant="secondary" texto="BUTTON" />
+              <Button variant="secondary" className="bg-secondary-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!" texto="BUTTON" />
+              <Button variant="secondary" disabled texto="BUTTON" />
             </div>
 
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Danger</span>
-              <Button variant="danger">BUTTON</Button>
-              <Button variant="danger" className={hover.danger}>BUTTON</Button>
-              <Button variant="danger" disabled>BUTTON</Button>
+              <Button variant="danger" texto="BUTTON" />
+              <Button variant="danger" className="bg-danger-hover! shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!" texto="BUTTON" />
+              <Button variant="danger" disabled texto="BUTTON" />
             </div>
           </div>
         </section>
@@ -51,7 +45,7 @@ export default function App() {
         </section>
 
         <section className="space-y-6 max-w-2xl mx-auto">
-          <h2 className="text-xl font-bold text-center">Perfil de Usuario</h2>
+          <h2 className="text-xl font-bold border-l-4 border-brand-purple pl-4">Perfil de Usuario</h2>
           <UserCard />
         </section>
 
