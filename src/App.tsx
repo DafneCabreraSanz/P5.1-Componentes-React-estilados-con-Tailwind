@@ -7,7 +7,7 @@ const hoverShadow = "shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-sans text-gray-900">
+    <div className="min-h-screen bg-gray-50 flex flex-col font-sans text-black">
       <Navbar />
 
       <main className="grow container mx-auto px-4 py-12 space-y-20">
