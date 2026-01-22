@@ -21,7 +21,6 @@ export function UserCard() {
           <label className="font-bold text-sm mb-1 ml-1">Email</label>
           <input
             type="email"
-            defaultValue="usuario@gmail.com"
             placeholder="usuario@gmail.com"
             className={`${inputBaseClass} border-secondary-bg focus:border-brand-purple`}
           />
