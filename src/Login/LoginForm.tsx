@@ -20,8 +20,7 @@ export function LoginForm() {
         <div className="space-y-2">
           <label className="font-bold ml-1 text-error">Contraseña</label>
           <input 
-            type="password" 
-            defaultValue="password123"
+            type="password"
             className={`${inputBaseClass} border-danger-bg focus:border-error`}
           />
         </div>
