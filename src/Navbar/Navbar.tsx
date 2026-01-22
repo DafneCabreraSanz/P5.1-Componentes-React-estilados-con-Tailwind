@@ -7,7 +7,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b border-gray-200 bg-white/90 backdrop-blur py-4 px-6 sticky top-0 z-50">
+    <nav className="w-full border-b border-gray-200 bg-primary-hover backdrop-blur py-4 px-6 sticky top-0 z-50">
       <div className="flex items-center justify-between">
         <div className="text-lg font-semibold tracking-tight">Logo</div>
 
