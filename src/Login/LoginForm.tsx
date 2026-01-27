@@ -4,7 +4,7 @@ const inputBaseClass = "w-full border rounded-xl px-4 py-3 text-center transitio
 
 export function LoginForm() {
   return (
-    <div className="border border-botones-trazo/50 rounded-[2.5rem] p-12 bg-botones-primario-enfoque w-full max-w-md shadow-[4px_4px_0px_0px_var(--color-botones-sombra-hover)] mx-auto">
+    <div className="border border-botones-trazo/50 rounded-3xl p-12 bg-botones-primario-enfoque w-full max-w-md shadow-[4px_4px_0px_0px_var(--color-botones-sombra-hover)] mx-auto">
       <h2 className="text-2xl font-black text-center mb-10 tracking-widest uppercase">LOGIN</h2>
       
       <form className="space-y-6">
