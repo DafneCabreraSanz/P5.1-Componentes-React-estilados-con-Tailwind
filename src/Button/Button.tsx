@@ -4,7 +4,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({ variant = 'primary', className = '', disabled, texto }: ButtonProps) {
-  const base = "px-8 py-2 rounded-xl border-2 font-bold transition-all duration-200 outline-none disabled:opacity-40 disabled:cursor-not-allowed disabled:border-transparent";
+  const base = "px-8 py-2 rounded-xl border-2 font-bold transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed disabled:border-transparent";
   const shadowStyles = "shadow-[4px_4px_0px_0px_var(--color-botones-sombra)] hover:shadow-[4px_4px_0px_0px_var(--color-botones-sombra-hover)] disabled:shadow-none";
   
   const styles = {

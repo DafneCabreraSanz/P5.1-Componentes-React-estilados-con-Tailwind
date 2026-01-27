@@ -1,6 +1,6 @@
 import { Button } from '../Button/Button';
 
-const inputBaseClass = "w-full border rounded-xl px-4 py-3 text-center outline-none transition-colors";
+const inputBaseClass = "w-full border rounded-xl px-4 py-3 text-center transition-colors";
 
 export function LoginForm() {
   return (
