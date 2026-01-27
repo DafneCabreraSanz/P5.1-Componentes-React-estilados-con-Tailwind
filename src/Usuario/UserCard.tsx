@@ -22,7 +22,7 @@ export function UserCard() {
           <input
             type="email"
             placeholder="usuario@gmail.com"
-            className={`${inputBaseClass} border-botones-secundario-secundario`}
+            className={`${inputBaseClass} border-botones-secundario-secundario focus:border-brand-purple focus:ring-1 focus:ring-brand-purple focus:outline-none`}
           />
         </div>
 

@@ -13,7 +13,7 @@ export function LoginForm() {
           <input 
             type="email" 
             placeholder="usuario@gmail.com"
-            className={`${inputBaseClass} border-botones-secundario-secundario`}
+            className={`${inputBaseClass} border-botones-secundario-secundario focus:border-brand-purple focus:ring-1 focus:ring-brand-purple focus:outline-none`}
           />
         </div>
 
@@ -21,7 +21,7 @@ export function LoginForm() {
           <label className="font-bold ml-1 text-error">Contraseña</label>
           <input 
             type="password"
-            className={`${inputBaseClass} border-botones-peligro-peligro`}
+            className={`${inputBaseClass} border-botones-peligro-peligro focus:border-brand-purple focus:ring-1 focus:ring-brand-purple focus:outline-none`}
           />
         </div>
 
