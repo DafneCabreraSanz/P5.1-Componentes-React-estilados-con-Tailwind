@@ -3,11 +3,11 @@ import { UserCard } from './Usuario/UserCard';
 import { LoginForm } from './Login/LoginForm';
 import { Button } from './Button/Button';
 
-const hoverShadow = "shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)]!";
+const hoverShadow = "shadow-[4px_4px_0px_0px_var(--color-botones-sombra-hover)]!";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-sans text-black">
+      <div className="min-h-screen bg-botones-primario-enfoque flex flex-col font-sans text-black">
       <Navbar />
 
       <main className="grow container mx-auto px-4 py-12 space-y-20">
@@ -16,26 +16,26 @@ export default function App() {
           <h2 className="text-xl font-bold text-center">
             VARIOS TIPOS DE BOTONES
           </h2>
-          <div className="flex flex-wrap justify-center gap-8 p-10 bg-white rounded-3xl border-2 border-dashed border-brand-purple/20">
+          <div className="flex flex-wrap justify-center gap-8 p-10 bg-botones-primario-enfoque rounded-3xl border-2 border-dashed border-botones-trazo/20">
             
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Primary</span>
               <Button variant="primary" texto="BUTTON" />
-              <Button variant="primary" className={`bg-primary-hover! ${hoverShadow}`} texto="BUTTON" />
+              <Button variant="primary" className={` bg-botones-primario-hover! ${hoverShadow}`} texto="BUTTON" />
               <Button variant="primary" disabled texto="BUTTON" />
             </div>
 
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Secondary</span>
               <Button variant="secondary" texto="BUTTON" />
-              <Button variant="secondary" className={`bg-secondary-hover! ${hoverShadow}`} texto="BUTTON" />
+              <Button variant="secondary" className={` bg-botones-secundario-hover! ${hoverShadow}`} texto="BUTTON" />
               <Button variant="secondary" disabled texto="BUTTON" />
             </div>
 
             <div className="flex flex-col gap-4 items-center">
               <span className="text-xs font-bold">Danger</span>
               <Button variant="danger" texto="BUTTON" />
-              <Button variant="danger" className={`bg-danger-hover! ${hoverShadow}`} texto="BUTTON" />
+              <Button variant="danger" className={` bg-botones-peligro-hover! ${hoverShadow}`} texto="BUTTON" />
               <Button variant="danger" disabled texto="BUTTON" />
             </div>
           </div>

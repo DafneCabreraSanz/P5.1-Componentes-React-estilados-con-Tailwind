@@ -4,7 +4,7 @@ const inputBaseClass = "w-full border rounded-xl px-4 py-3 text-center outline-n
 
 export function LoginForm() {
   return (
-    <div className="border border-brand-purple/50 rounded-[2.5rem] p-12 bg-white w-full max-w-md shadow-[4px_4px_0px_0px_var(--color-brand-shadow-hover)] mx-auto">
+    <div className="border border-botones-trazo/50 rounded-[2.5rem] p-12 bg-botones-primario-enfoque w-full max-w-md shadow-[4px_4px_0px_0px_var(--color-botones-sombra-hover)] mx-auto">
       <h2 className="text-2xl font-black text-center mb-10 tracking-widest uppercase">LOGIN</h2>
       
       <form className="space-y-6">
@@ -13,7 +13,7 @@ export function LoginForm() {
           <input 
             type="email" 
             placeholder="usuario@gmail.com"
-            className={`${inputBaseClass} border-secondary-bg focus:border-brand-purple`}
+            className={`${inputBaseClass} border-botones-secundario-secundario`}
           />
         </div>
 
@@ -21,7 +21,7 @@ export function LoginForm() {
           <label className="font-bold ml-1 text-error">Contraseña</label>
           <input 
             type="password"
-            className={`${inputBaseClass} border-danger-bg focus:border-error`}
+            className={`${inputBaseClass} border-botones-peligro-peligro`}
           />
         </div>
 
